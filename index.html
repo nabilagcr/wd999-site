@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0a0a">
+<title>WD999 | Digital Entertainment</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding-bottom: 75px;
+}
+
+:root {
+  --gold: #f5c542;
+  --gold2: #ffe9a0;
+  --panel: #171717;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #111;
+  border-bottom: 1px solid #5e4b16;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: var(--gold);
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.tag {
+  font-size: 10px;
+  color: var(--gold2);
+  border: 1px solid #786020;
+  padding: 7px 9px;
+  border-radius: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 14px 5px;
+  background: #151515;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+main {
+  max-width: 650px;
+  margin: auto;
+  padding: 15px;
+}
+
+.hero {
+  text-align: center;
+  padding: 30px 18px;
+  border: 1px solid #6d571b;
+  border-radius: 15px;
+  background:
+    radial-gradient(ellipse at top right,
+    #493710, transparent 65%),
+    linear-gradient(135deg, #222, #0e0e0e);
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 15px 0 10px;
+}
+
+h1 span {
+  color: var(--gold);
+}
+
+.hero p {
+  color: #bbb;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-top: 18px;
+  font-weight: bold;
+  background: linear-gradient(135deg,
+    var(--gold2), #d4a017);
+  color: #171000;
+  cursor: pointer;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 26px 0 14px;
+}
+
+.heading h2 {
+  font-size: 17px;
+}
+
+.heading span {
+  color: var(--gold);
+  font-size: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid #303030;
+  border-radius: 12px;
+  padding: 19px 10px;
+  text-align: center;
+}
+
+.card .emoji {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  color: var(--gold2);
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.notice {
+  background: #17140d;
+  border: 1px solid #383024;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #d6c69b;
+}
+
+.notice strong {
+  color: var(--gold);
+}
+
+footer {
+  border-top: 1px solid #292929;
+  text-align: center;
+  padding: 22px 12px;
+  color: #888;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+footer strong {
+  color: var(--gold);
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  border-top: 1px solid #5e4b16;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 4px;
+  z-index: 20;
+}
+
+.bottom-nav a {
+  color: var(--gold2);
+  font-size: 11px;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media (max-width: 360px) {
+  h1 { font-size: 27px; }
+  nav a { font-size: 10px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">WD999</div>
+  <div class="tag">DIGITAL WORLD</div>
+</header>
+
+<nav>
+  <a href="#beranda">Beranda</a>
+  <a href="#fitur">Fitur</a>
+  <a href="#tentang">Tentang</a>
+</nav>
+
+<main>
+  <section class="hero" id="beranda">
+    <div class="eyebrow">WELCOME TO WD999</div>
+    <h1>Explore Your <span>World.</span></h1>
+    <p>
+      Temukan pengalaman hiburan digital
+      dengan tampilan modern, nyaman,
+      dan mudah digunakan.
+    </p>
+    <button class="btn" id="jelajahi">
+      Jelajahi Sekarang →
+    </button>
+  </section>
+
+  <section id="fitur">
+    <div class="heading">
+      <h2>Jelajahi Fitur</h2>
+      <span>WD999 COLLECTION</span>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="emoji">✨</div>
+        <h3>Konten Pilihan</h3>
+        <p>Jelajahi konten hiburan digital.</p>
+      </article>
+
+      <article class="card">
+        <div class="emoji">🎮</div>
+        <h3>Game Santai</h3>
+        <p>Game hiburan tanpa taruhan uang.</p>
+      </article>
+
+      <article class="card">
+        <div class="emoji">📱</div>
+        <h3>Mobile Friendly</h3>
+        <p>Nyaman digunakan lewat HP.</p>
+      </article>
+
+      <article class="card">
+        <div class="emoji">🛡️</div>
+        <h3>Privasi</h3>
+        <p>Utamakan keamanan pengguna.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="notice" id="tentang">
+    <strong>Tentang WD999</strong><br>
+    Platform hiburan digital dengan
+    desain premium hitam dan emas.
+    Halaman ini adalah fondasi awal
+    untuk pengembangan selanjutnya.
+  </section>
+</main>
+
+<footer>
+  <strong>WD999</strong><br>
+  Digital Entertainment<br>
+  © <span id="tahun"></span> WD999
+</footer>
+
+<div class="bottom-nav">
+  <a href="#beranda">⌂<br>Beranda</a>
+  <a href="#fitur">✦<br>Fitur</a>
+  <a href="#tentang">ⓘ<br>Tentang</a>
+</div>
+
+<script>
+document.getElementById("tahun").textContent =
+  new Date().getFullYear();
+
+document.getElementById("jelajahi").addEventListener(
+  "click", function() {
+    document.getElementById("fitur").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+);
+</script>
+
+</body>
+</html>
